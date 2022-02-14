@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.size{
+    width: 600px;
+    height: 100%;
+}
+.team-section{
+    height: 100vh;
+    display: flex;
+}
+.persona{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+.persona:hover{
+    flex: 2;
+}
+.persona-pic{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+    filter: grayscale(80%);
+}
+.persona:hover .persona-pic{
+    filter: grayscale(0);
+}
+.persona-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+.persona:hover .persona-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+.persona-info h2{
+    font-size: 20px;
+    color: #fff;
+}
+.persona-info p{
+    color: #b8e994;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.socialmedia a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    background-color: #b8e994;
+    line-height: 40px;
+    border-radius: 50px;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+}
+.socialmedia a:hover{
+    color: #b8e994;
+    background-color: transparent;
+    transform: scale(1.5);
+}
